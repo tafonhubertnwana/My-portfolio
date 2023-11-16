@@ -15,7 +15,7 @@ const SocialLink = () => {
         </>
       ),
       href: 'www.linkedin.com/in/tafon-n-hubert',
-      style: "rounded-tr-md"
+      style: "rounded-tr-md bg-sky-800"
     },
     {
       id: 2,
@@ -24,7 +24,8 @@ const SocialLink = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: 'https://github.com/tafonhubertnwana'
+      href: 'https://github.com/tafonhubertnwana',
+      style: "bg-black"
     },
     {
       id: 3,
@@ -33,33 +34,52 @@ const SocialLink = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: 'mailto:tafonsoftwarespecialist@gmail.com'
+      href: 'mailto:tafonsoftwarespecialist@gmail.com',
+      style: " bg-blue-500"
     },
 
     {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+          Resume <BsFillPersonLinesFill size={30} className=''/>
         </>
       ),
-      href: 'https://linkedin.com'
+      href: '/Tafon_Hubert_Front_End_Developer-Resume.pdf',
+      style: "rounded-br-md bg-gray-500",
+      download: true
     }
     
-  ]
+  ];
+
   return (
-    <div className="flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex-col top-[35%] left-0 fixed">
       <ul>
-        <li clasName="flex justify-between items-center w-40 h-14 px-4 bg-grey-500 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]" >
-          <a href="" className ="flex justify-between items-center w-full text-white" >
-            <>
-              LinkedIn <FaLinkedin size={30} />
-            </>          
-          </a>
-        </li>
+
+        {links.map
+        (({id, child, href, style, download}) => (
+          <li 
+            key={id} 
+            className= {
+            "flex justify-between items-center w-40 h-14 px-4 bg-grey-500 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]  bg-gray-500" + " " +
+            style 
+          }>
+            <a href={href} 
+              className ="flex justify-between items-center w-full text-white"  
+              download={download} 
+              target="_blank"
+              rel="noreferrer"
+            >
+              
+              {child}         
+            </a>
+         </li>
+
+        ))}
+        
       </ul>
     </div>
-  )
+  );
 }
 
 export default SocialLink
