@@ -47,13 +47,13 @@ const SocialLink = () => {
       ),
       href: '/Tafon_Hubert_Front_End_Developer-Resume.pdf',
       style: "rounded-br-md bg-gray-500",
-      download: true
+      download: false
     }
     
   ];
 
   return (
-    <div className="hidden lg:flex-col top-[35%] left-0 fixed">
+    <div className="flex-col top-[35%] left-0 fixed">
       <ul>
 
         {links.map
@@ -61,6 +61,7 @@ const SocialLink = () => {
           <li 
             key={id} 
             className= {
+            // eslint-disable-next-line no-useless-concat
             "flex justify-between items-center w-40 h-14 px-4 bg-grey-500 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]  bg-gray-500" + " " +
             style 
           }>
