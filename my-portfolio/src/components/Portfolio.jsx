@@ -2,10 +2,31 @@ import React from 'react'
 import image from "../image/personel-4.jpg";
 
 const Portfolio = () => {
+
+  const portfolios = [
+    {
+      id: 1,
+      src: image
+    },
+    {
+      id: 1,
+      src: image
+    },
+    {
+      id: 1,
+      src: image
+    },
+    {
+      id: 1,
+      src: image
+    },
+
+  ]
+
   return (
     <div 
     name='portfolio'
-    className=' bg-gradient-to-b from-slate-200 to-slate-50 text-black w-full md:h-screen '
+    className=' bg-gradient-to-b from-slate-50 to-slate-200 text-black w-full md:h-screen '
     >
 
       <div className="max-w-screen-lg p-4 max-auto flex flex-col justify-center w-full h-full">
@@ -14,12 +35,12 @@ const Portfolio = () => {
           <p className='py-6'>Check our some of my work right here</p>
         </div>
 
-        <div className='gridsm:grid-cols-2 md:grid-cols-3 gap-8 px-12'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12'>
           <div>
-            <img src={image} alt="" />
-            <div>
-              <button>Demo</button>
-              <button>Code</button>
+            <img src={image} alt="" className='rounded-md duration-200 hover:scale-105'/>
+            <div className='flex items-center justify-center'>
+              <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
+              <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
             </div>
           </div>
         </div>
