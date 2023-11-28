@@ -61,8 +61,7 @@ const SocialLink = () => {
           <li 
             key={id} 
             className= {
-            // eslint-disable-next-line no-useless-concat
-            "flex justify-between items-center w-40 h-14 px-4 bg-grey-500 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]  bg-gray-500" + " " + style
+            `flex justify-between items-center w-40 h-14 px-4 bg-grey-500 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]  ${style} `
           }>
             <a href={href} 
               className ="flex justify-between items-center w-full text-white"  
