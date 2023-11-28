@@ -25,7 +25,7 @@ const Portfolio = () => {
 
   return (
     <div 
-    name='portfolio'
+    name='Portfolio'
     className=' bg-gradient-to-b from-slate-50 to-slate-200 text-black w-full md:h-screen '
     >
 
