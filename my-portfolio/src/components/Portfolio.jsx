@@ -1,24 +1,34 @@
-import React from 'react'
-import image from "../image/personel-4.jpg";
+import {React, useState} from 'react'
+import image from "../image/e-quiz.png";
 
 const Portfolio = () => {
+
+  const [click setClick] = useState("")
+
+  const handleClick = () => {
+    
+  }
 
   const portfolios = [
     {
       id: 1,
-      src: image
+      src: image,
+      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
     },
     {
       id: 2,
-      src: image
+      src: image,
+      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
     },
     {
       id: 3,
-      src: image
+      src: image,
+      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
     },
     {
       id: 4,
-      src: image
+      src: image,
+      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
     }
 
   ]
@@ -26,7 +36,7 @@ const Portfolio = () => {
   return (
     <div 
     name='Portfolio'
-    className=' bg-gradient-to-b from-slate-50 to-slate-200 text-black w-full md:h-screen  pt-40 pb-60'
+    className=' bg-gradient-to-b from-slate-600 to-slate-900 text-black w-full md:h-screen  pt-40 pb-60'
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -37,7 +47,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -45,8 +55,13 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                <button 
+                  onClick={handleClick} 
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  target="_blank"
+                  rel="noreferrer"
+                  >
+                  {Demo}
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
