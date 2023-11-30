@@ -8,6 +8,7 @@ import tailwind from "../image/tailwind.png"
 import react from "../image/react.png"
 import github from "../image/github.png"
 import express from "../image/expressjs.png"
+import aws from "../image/aws.png"
 
 const Experience= () => {
 
@@ -61,12 +62,18 @@ const Experience= () => {
       title: "Github",
       style: "shadow-gray-400"
     },
+    {
+      id: 8,
+      src: aws,
+      title: "AWS",
+      style: "shadow-white"
+    }
 
   ]
 
 
   return (
-    <div name="Experience"
+    <div name="Skill"
       className=" bg-gradient-to-b from-slate-900 to-slate-600 text-black w-full h-screen  "
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black">

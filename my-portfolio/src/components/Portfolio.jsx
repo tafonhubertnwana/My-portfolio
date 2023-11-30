@@ -1,38 +1,8 @@
-import {React, useState} from 'react'
+import React from 'react'
 import image from "../image/e-quiz.png";
+import image2 from "../image/ht-mobile.png"
 
 const Portfolio = () => {
-
-  const [click setClick] = useState("")
-
-  const handleClick = () => {
-    
-  }
-
-  const portfolios = [
-    {
-      id: 1,
-      src: image,
-      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
-    },
-    {
-      id: 2,
-      src: image,
-      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
-    },
-    {
-      id: 3,
-      src: image,
-      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
-    },
-    {
-      id: 4,
-      src: image,
-      demo: "https://main.dqk3s0sa4prok.amplifyapp.com/"
-    }
-
-  ]
-
   return (
     <div 
     name='Portfolio'
@@ -47,28 +17,58 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demo }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <button 
-                  onClick={handleClick} 
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                  target="_blank"
-                  rel="noreferrer"
-                  >
-                  {Demo}
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={image2} alt="" className="rounded-md duration-200 hover:scale-105"/>
+            <div className="flex items-center justify-center">
+              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                demo
+              </button></a> 
+
+              <a href=""><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
-              </div>
+              </a>
             </div>
-          ))}
+          </div>
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={image} alt="" className="rounded-md duration-200 hover:scale-105"/>
+            <div className="flex items-center justify-center">
+              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                demo
+              </button></a> 
+
+              <a href=""><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={image} alt="" className="rounded-md duration-200 hover:scale-105"/>
+            <div className="flex items-center justify-center">
+              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                demo
+              </button></a> 
+
+              <a href=""><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={image} alt="" className="rounded-md duration-200 hover:scale-105"/>
+            <div className="flex items-center justify-center">
+              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                demo
+              </button></a> 
+
+              <a href=""><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
