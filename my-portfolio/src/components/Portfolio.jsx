@@ -2,6 +2,7 @@ import React from 'react'
 import image from "../image/e-quiz.png";
 import image2 from "../image/ht-mobile.png"
 import image3 from "../image/e-best.png"
+import image4 from "../image/portfolio.png"
 
 const Portfolio = () => {
   return (
@@ -29,7 +30,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img src={image} alt="" className="rounded-md duration-200 hover:scale-105"/>
+            <img src={image4} alt="" className="rounded-md duration-200 hover:scale-105"/>
             <div className="flex items-center justify-center">
               <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 demo
