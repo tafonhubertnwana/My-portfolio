@@ -5,11 +5,8 @@ import image3 from "../image/e-best.png"
 
 const Portfolio = () => {
   return (
-    <div 
-    name='Portfolio'
-    className=' bg-gradient-to-b from-slate-600 to-slate-900 text-white w-full md:h-screen  pt-40 pb-60'
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+    <div name='Portfolio'>
+      <div className="max-w-screen-lg pt-20  mx-auto flex flex-col justify-center w-full h-full text-white">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -60,7 +57,7 @@ const Portfolio = () => {
           <div className="shadow-md shadow-gray-600 rounded-lg">
             <img src={image} alt="" className="rounded-md duration-200 hover:scale-105"/>
             <div className="flex items-center justify-center">
-              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+      1        <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 demo
               </button></a> 
 
