@@ -1,6 +1,11 @@
-import React from 'react'
+import {React, useState} from 'react'
 
 const Contact = () => {
+
+  const [name , setName] = useState("")
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState("")
+
   return (
     <div 
       name="Contact" 
@@ -20,18 +25,24 @@ const Contact = () => {
             <input 
               type="text" 
               name="name" 
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               placeholder="Enter your name" 
               className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
             />
             <input 
               type="text" 
-              name="Email" 
+              name="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} 
               placeholder="Enter your email" 
               className="p-2 my-4 bg-transparent border-2 rounded-md text-black focus:outline-none"
             />
             <textarea 
               name="message" 
               rows="10" 
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               placeholder='Enter your message'
               className="p-2 bg-transparent border-2 rounded-md text-black focus:outline-none"
             >
