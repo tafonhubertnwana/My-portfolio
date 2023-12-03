@@ -14,7 +14,7 @@ const SocialLink = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: 'www.linkedin.com/in/tafon-n-hubert',
+      href: 'https://www.linkedin.com/in/tafon-n-hubert/',
       style: "rounded-tr-md bg-sky-800"
     },
     {
