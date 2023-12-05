@@ -45,7 +45,7 @@ const Portfolio = () => {
           <div className="shadow-md shadow-gray-600 rounded-lg">
             <img src={image3} alt="" className="rounded-md duration-200 hover:scale-105"/>
             <div className="flex items-center justify-center">
-              <a href="https://ornate-paprenjak-9a17bf.netlify.app"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <a href="https://e-best-shopping.netlify.app/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 demo
               </button></a> 
 
@@ -58,7 +58,7 @@ const Portfolio = () => {
           <div className="shadow-md shadow-gray-600 rounded-lg">
             <img src={image} alt="" className="rounded-md duration-200 hover:scale-105"/>
             <div className="flex items-center justify-center">
-              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <a href="https://e-quiz-game.netlify.app/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 demo
               </button></a> 
 
