@@ -32,7 +32,7 @@ const Portfolio = () => {
           <div className="shadow-md shadow-gray-600 rounded-lg">
             <img src={image4} alt="" className="rounded-md duration-200 hover:scale-105"/>
             <div className="flex items-center justify-center">
-              <a href="https://main.dqk3s0sa4prok.amplifyapp.com/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <a href="https://my-portfolio-dip8-3jng2q3fj-tafonhubertnwanas-projects.vercel.app/"><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                 demo
               </button></a> 
 
