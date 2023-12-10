@@ -22,9 +22,8 @@ const Home = () => {
               I'm a Full Stack Developer
             </h2>
             <p className="text-gray-200 py-4 max-w-md">
-              I have 2 years of experience building and desgining software.
-              Currently, I love to work on web application using technologies like
-              React, Tailwind, and Next JS.
+              I have 6 years of experience building and desgining software.
+              Currently, I love to work on web application using technologies such as MERN stack, PERN stack and the MEAN stack.
             </p>
 
             <div>

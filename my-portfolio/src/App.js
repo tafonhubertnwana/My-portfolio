@@ -12,12 +12,6 @@ function App() {
     <>
       <Navbar />
       <Home />
-      
-      
-
-      
-      
-
       <SocialLink />
     </>
   );
