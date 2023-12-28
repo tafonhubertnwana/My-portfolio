@@ -22,7 +22,7 @@ const Home = () => {
               I'm a Full Stack Developer
             </h2>
             <p className="text-gray-200 py-4 max-w-md">
-              I have 6 years of experience building and desgining software.
+              I have experience on building and desgining software.
               Currently, I love to work on web application using technologies such as MERN, PERN and the MEAN stacks.
             </p>
 
